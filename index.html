@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HydroFin · Gradientes Conjugados Precondicionado</title>
+  <meta name="description" content="Asignación del financiamiento de Hydrotech resuelta con el método de Gradientes Conjugados Precondicionado (UMSA · Métodos Numéricos).">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f5a43'/%3E%3Cpath d='M16 6c5 4 7 8 7 11a7 7 0 0 1-14 0c0-3 2-7 7-11z' fill='%23b6e04a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#m1"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor" opacity=".16"/><path d="M16 6c5 4 7 8 7 11a7 7 0 0 1-14 0c0-3 2-7 7-11z" fill="currentColor"/></svg><span>HydroFin</span></a>
+      <nav id="nav" aria-label="Módulos">
+        <a href="#m1">1 Inicio</a><a href="#m2">2 Caso</a><a href="#m3">3 Formulación</a><a href="#m4">4 Datos</a><a href="#m5">5 Escenarios</a><a href="#m6">6 Referencia</a><a href="#m7">7 GCP vs GC</a><a href="#m8">8 Errores</a><a href="#m9">9 QA</a><a href="#m10">10 Conclusiones</a>
+      </nav>
+      <div id="status-pill" class="pill" role="status" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="m1" class="mod hero"><div id="b1"></div></section>
+    <section id="m2" class="mod"><h2><span class="num">2</span>Caso de estudio</h2><div id="b2"></div></section>
+    <section id="m3" class="mod"><h2><span class="num">3</span>Formulación del sistema Ax = b</h2><div id="b3"></div></section>
+    <section id="m4" class="mod"><h2><span class="num">4</span>Entrada de datos</h2><div id="b4"></div></section>
+    <section id="m5" class="mod"><h2><span class="num">5</span>Tres escenarios</h2><div id="b5"></div></section>
+    <section id="m6" class="mod"><h2><span class="num">6</span>Solución numérica de referencia (método directo)</h2><div id="b6"></div></section>
+    <section id="m7" class="mod"><h2><span class="num">7</span>GCP vs GC</h2><div id="b7"></div></section>
+    <section id="m8" class="mod"><h2><span class="num">8</span>Análisis de errores</h2><div id="b8"></div></section>
+    <section id="m9" class="mod"><h2><span class="num">9</span>Módulo de pruebas (QA)</h2><div id="b9"></div></section>
+    <section id="m10" class="mod"><h2><span class="num">10</span>Conclusiones y referencias</h2><div id="b10"></div></section>
+  </main>
+
+  <footer class="foot"><span id="foot-text"></span></footer>
+
+  <script src="src/config.js"></script>
+  <script src="src/linalg.js"></script>
+  <script src="src/solvers.js"></script>
+  <script src="src/model.js"></script>
+  <script src="src/engine.js"></script>
+  <script src="src/qa.js"></script>
+  <script src="src/charts.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
