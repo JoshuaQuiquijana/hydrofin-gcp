@@ -12,6 +12,6 @@
     mencion: 'Desarrollo de Software',
     modalidad: 'Individual',
     fecha: 'Noviembre 2026',
-    repoUrl: '', // pega aquí el enlace de tu repositorio público (GitHub/GitLab)
+    repoUrl: 'https://joshuaquiquijana.github.io/hydrofin-gcp/', 
   };
 })();

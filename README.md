@@ -10,7 +10,7 @@ Aplicación web interactiva que modela la asignación del financiamiento (Bs 40.
 
 Tolerancia ‖rₖ‖₂/‖b‖₂ < 10⁻⁶ en los **tres escenarios**: ideal, bajo estrés financiero y mal condicionado.
 
-> Web pública: _(pega aquí el enlace de GitHub Pages)_
+> Web pública: https://joshuaquiquijana.github.io/hydrofin-gcp/
 
 ## El modelo en una línea
 
@@ -44,13 +44,6 @@ python3 -m http.server 8000      # y abrir http://localhost:8000
 npm test                         # = node tests/run-tests.js
 ```
 
-## Publicar en GitHub Pages (enlace público sin credenciales)
-
-1. Crea un repositorio **público** en GitHub y sube este proyecto (ver «Historial de commits»).
-2. *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`*.
-3. En unos minutos tendrás `https://<usuario>.github.io/<repositorio>/`. Pégalo arriba y en `src/config.js` (`repoUrl`).
-
-Antes de publicar, edita **`src/config.js`** con tu nombre y demás datos de portada.
 
 ## Arquitectura
 
@@ -88,9 +81,6 @@ parada: ‖rk‖₂/‖b‖₂ < tol  ó  k = Nmáx
 
 > **Nota:** 
 
-## Pruebas (módulo QA)
-
-La web ejecuta al cargar y bajo demanda **28 pruebas** (Entrada · Resultado esperado · Resultado obtenido · Conclusión): las 4 obligatorias del desafío (carga de escenarios, matriz no válida, edición dinámica, comparativa de precondicionamiento) y pruebas adicionales (SPD, métodos directos, κ conocido, error relativo no definido, Nmáx insuficiente, SSOR/IC(0), consistencia entre escenarios, x₀ ≠ 0, integridad de datos). Cuatro de ellas manipulan la interfaz real (escriben en celdas, pulsan botones y leen el DOM). `npm test` corre las 24 pruebas del motor en consola.
 
 ## Datos
 
